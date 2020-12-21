@@ -1,0 +1,80 @@
+* {box-sizing: border-box;}
+html, body {margin:0;padding:0;}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+header {
+    /*background-image: url('img/test.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;*/
+    background: linear-gradient(45deg, blue, red);
+    height: 100vh;
+    position: relative;
+}
+
+header h1 {
+    position: absolute;
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main {
+    padding: 10px 25px;
+}
+
+section {
+    margin-bottom: 5px;
+}
+
+section h2 {
+    margin: 25px 0;
+}
+
+section.why-detail ul {
+    margin: initial;
+    list-style-type: square;
+}
+
+section.why-detail ul li {
+    margin: initial;
+    padding: initial;
+}
+
+section.why-detail table {
+    text-align: center;
+    border: 1px solid black;
+    margin: auto;
+}
+
+section.why-detail thead, th {
+    text-decoration: underline;
+}
+
+section.why-detail td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+section.where-detail code {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+footer {
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+}
