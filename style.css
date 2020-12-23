@@ -1,4 +1,11 @@
+@media only screen and (max-width: 650px) {
+    body {
+        background-color: aqua;
+    }
+}
+
 * {box-sizing: border-box;}
+
 html, body {margin:0;padding:0;}
 
 body {
@@ -7,10 +14,11 @@ body {
     line-height: 2em;
 }
 
+.clearfix { clear: both; }
+
+/* Header */
+
 header {
-    /*background-image: url('img/test.png');
-    background-repeat: no-repeat;
-    background-size: 100% auto;*/
     background: linear-gradient(45deg, blue, red);
     height: 100vh;
     position: relative;
@@ -30,9 +38,15 @@ header h1 {
     transform: translate(-50%, -50%);
 }
 
+/* Main */
+
 main {
+    float: left;
+    width: 70%;
     padding: 10px 25px;
 }
+
+/* Every Section */
 
 section {
     margin-bottom: 5px;
@@ -41,6 +55,17 @@ section {
 section h2 {
     margin: 25px 0;
 }
+
+/* About Coding Club */
+
+section.about-detail {
+    border: 1px solid blue;
+    max-width: 1400px;
+    /* height: 500px; */
+    font-size: 22px;
+}
+
+/* Why should you code */
 
 section.why-detail ul {
     margin: initial;
@@ -67,14 +92,33 @@ section.why-detail td {
     padding: 10px;
 }
 
-section.where-detail code {
-    background-color: black;
-    color: white;
-    padding: 10px;
+/* Aside */
+
+aside {
+    padding: 5px;
+    float: right;
+    margin: 10px 25px 0 0;
+    box-shadow: 2px 1px 10px black;
+    border-bottom-right-radius: 10px;
+    width: 25%;
 }
 
+aside h3 {
+    margin-left: 10px;
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+/* Footer */
+
 footer {
+    background-color: black;
+    color: white;
     font-weight: bold;
     text-align: center;
     padding: 15px;
 }
+
+footer a {text-decoration: none;}
+
+footer a:hover {text-decoration: underline;}
