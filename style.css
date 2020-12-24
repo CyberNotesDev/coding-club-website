@@ -59,9 +59,7 @@ section h2 {
 /* About Coding Club */
 
 section.about-detail {
-    border: 1px solid blue;
     max-width: 1400px;
-    /* height: 500px; */
     font-size: 22px;
 }
 
@@ -90,6 +88,12 @@ section.why-detail thead, th {
 section.why-detail td {
     border: 1px solid black;
     padding: 10px;
+}
+
+/* How to get started */
+
+section.how-detail p {
+    font-size: 20px;
 }
 
 /* Aside */
