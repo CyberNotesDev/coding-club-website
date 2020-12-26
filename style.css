@@ -19,7 +19,10 @@ body {
 /* Header */
 
 header {
-    background: linear-gradient(45deg, blue, red);
+    background-image: url('./images-folder/intro.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     position: relative;
 }
@@ -111,6 +114,40 @@ aside h3 {
     margin-left: 10px;
     margin-top: 0;
     text-decoration: underline;
+}
+
+/* Interative */
+
+.interactive-div {
+    background-color: red;
+    display: flex;
+    height: 500px;
+}
+
+.HCJ-input {
+    border-right: 1px solid black;
+    padding: 5px;
+    width: 50%;
+}
+
+.HCJ-input textarea {
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+    resize: none;
+}
+
+.HCJ-output {
+    padding: 5px;
+    width: 50%;
+}
+
+/* Summary */
+
+section.summary {
+    padding: 0 25px;
+    font-size: 20px;
 }
 
 /* Footer */
